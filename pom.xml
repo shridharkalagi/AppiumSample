@@ -30,7 +30,7 @@
         <dependency>
             <groupId>com.github.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>master-v6.1.0-gde71366-26</version>
+            <version>18eba219ed</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
