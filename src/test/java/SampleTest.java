@@ -14,9 +14,7 @@ import java.net.URL;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-/**
- * Created by shridhk on 12/28/17.
- */
+
 public class SampleTest {
     public AppiumDriver driver;
     WebDriverWait wait;
