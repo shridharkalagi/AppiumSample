@@ -2,19 +2,17 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 /**
  * Created by shridhk on 12/28/17.
@@ -36,8 +34,7 @@ public class SampleTest {
     @Test
     public void SampleTest() {
         wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.
-                elementToBeClickable(MobileBy.AccessibilityId("login"))).click();
+        wait.until(presenceOfElementLocated(MobileBy.AccessibilityId("login"))).click();
     }
 
     @AfterClass
