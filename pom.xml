@@ -29,9 +29,9 @@
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
-            <groupId>io.appium</groupId>
+            <groupId>com.github.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.2.0</version>
+            <version>5aa8009</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
